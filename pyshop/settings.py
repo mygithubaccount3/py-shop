@@ -25,7 +25,7 @@ SECRET_KEY = '9=ka#3zr$7&p0xmnwc-iv6ykmyusm9(%ubuq8pr9nr&e9vsoir'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0'
+    '0.0.0.0',
     'stormy-falls-92440.herokuapp.com',
     '127.0.0.1'
 ]
