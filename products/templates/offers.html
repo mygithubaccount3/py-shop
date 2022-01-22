@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <ol class="list-group list-group-numbered">
+        {% for offer in offers %}
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">{{ offer.code }}</div>
+                {{ offer.description }}
+            </div>
+            <span class="badge bg-primary rounded-pill">{{ offer.discount }}</span>
+        </li>
+        {% endfor %}
+    </ol>
+</div>
+{% endblock %}
